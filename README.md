@@ -12,6 +12,7 @@ Lautaro Duca - lautilossantos@gmail.com ||
 Leonardo Gómez Waipan - leowaipan@gmail.com ||
 Santiago Quintas - sanquintas@gmail.com ||
 Facundo Uthurralt - facu.uthu3@gmail.com ||
+Thiago Castro Ferrer - thiagocastroferrer@hotmail.com ||
 
 
 @Copyright - CryptoAPT - 2022.
