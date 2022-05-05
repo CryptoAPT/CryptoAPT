@@ -1,3 +1,22 @@
-.body {
-  background-color: lightblue;
+h1 {
+  top: 75px;
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #F2F2F2;
+}
+h2 {
+  top: 80px;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #F2F2F2;
+}
+.row {
+  color: white;
+}
+.container {
+    position: absolute;
+    left: 8%;
+    top: 50%;
 }
