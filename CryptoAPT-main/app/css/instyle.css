@@ -19,8 +19,18 @@ h2 {
     margin: auto;
     margin-top: 10%;
 }
-
-
+.valoracion1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.topmid-container {
+  text-align: center;
+}
+.valoraciones {
+  width: 300px;
+  height: 200px;
+}
 #top {
   margin: auto;
   margin-top: 10%;
@@ -32,7 +42,6 @@ h2 {
   padding-bottom: 10px;
   padding-right: 10px;
 }
-
 #copyright {
   position:fixed;
   left: 0;
@@ -41,23 +50,17 @@ h2 {
   width: 100%;
   background-color: #1B1A17;
 }
-
 #boton1 {
   background-color: red;
   border-style: hidden;
   margin: auto;
   margin-top: 10%;
 }
-
-.carouselimg {
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
+.headmid-container {
+  margin: auto;
+  display: flex;
 }
-
 .hr{
-
 color: red;
 border: 2px solid;
 width: 65%;
