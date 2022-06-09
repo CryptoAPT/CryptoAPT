@@ -1,0 +1,8 @@
+.welcontainer {
+    margin: auto;
+    margin-top: 10%;
+    height: 200px;
+    width: 500px;
+    background-color: aquamarine;
+    border-style: solid;
+}
