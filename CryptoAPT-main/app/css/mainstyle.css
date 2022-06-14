@@ -1,8 +1,26 @@
+
 .welcontainer {
+    border-radius: 10px;
     margin: auto;
     margin-top: 10%;
     height: 200px;
     width: 500px;
-    background-color: aquamarine;
-    border-style: solid;
+}
+
+.left-btn {
+    text-align: center;
+    
+    width: 300px;
+    height: 150px;
+}
+.mid-btn {
+    text-align: center;
+    
+    height: 150px;
+    width: 300px;
+}
+.right-btn{
+    text-align: center;
+    height: 150px;
+    width: 300px;
 }

@@ -32,6 +32,7 @@ h2 {
   height: 200px;
 }
 #top {
+  border-radius: 10px;
   margin: auto;
   margin-top: 10%;
   border-style: solid;

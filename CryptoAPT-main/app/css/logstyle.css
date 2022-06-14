@@ -1,6 +1,7 @@
 .login-container {
+  border-radius: 10px;
   margin: auto;
-  margin-top: 10%;
+  
   border-style: solid;
   width: 600px;
   padding-top: 10px;
@@ -16,8 +17,16 @@
   margin-top: 10%;
 }
 
-h1 {
+.logoimg {
 
-  font-family: 'Quicksand-medium', sans-serif;
-  font-size: 3rem;
+  position: relative;
+  top: 60px;
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+font {
+  font-family: 'Varela', sans-serif;
 }
