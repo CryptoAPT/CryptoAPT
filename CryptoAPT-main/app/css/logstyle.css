@@ -1,4 +1,6 @@
 .login-container {
+
+  font-family: 'Raleway', sans-serif;
   border-radius: 10px;
   margin: auto;
   
@@ -11,6 +13,8 @@
   padding-right: 10px;
 }
 #boton1 {
+
+  font-family: 'Raleway ', sans-serif;
   background-color: red;
   border-style: hidden;
   margin: auto;
@@ -18,7 +22,8 @@
 }
 
 .logoimg {
-
+  
+  font-family: 'Raleway ', sans-serif;
   position: relative;
   top: 60px;
   display: block;
@@ -28,5 +33,10 @@
 }
 
 font {
-  font-family: 'Varela', sans-serif;
+  font-family: 'Raleway ', sans-serif;
+}
+
+#emailHelp
+{
+  font-family: 'Raleway ', sans-serif;
 }
