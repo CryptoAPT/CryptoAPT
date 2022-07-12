@@ -17,4 +17,4 @@ Facundo Uthurralt - facu.uthu3@gmail.com ||
 Thiago Castro Ferrer - thiagocastroferrer@hotmail.com ||
 
 
-@Copyright - CryptoAPT - 2022 - All rights reserved.
+@Copyright - CryptoAPT 2022 || All rights reserved.
