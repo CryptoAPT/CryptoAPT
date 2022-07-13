@@ -1,4 +1,3 @@
-
 .welcontainer {
     border-radius: 10px;
     margin: auto;
@@ -6,7 +5,6 @@
     height: 200px;
     width: 500px;
 }
-
 .left-btn {
     text-align: center;
     
@@ -24,3 +22,60 @@
     height: 150px;
     width: 300px;
 }
+.top-container {
+    border-radius: 3%;
+    margin: auto;
+    border: 2px white solid;
+    width: 600px;
+    height: 200px;  
+    margin-top: 6;
+}
+.mid-container {
+    margin:auto;
+}
+.bitcoin-image {
+    height: 150px;
+    width: 150px;
+}
+.graph-image {
+    float: right;
+    text-align: right;
+    height: 150px;
+    width: 150px;
+}
+.guia {
+    width: 50%;
+    height: 70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tracker {
+    width: 50%;
+    height: 70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.analyzer {
+    width: 50%;
+    height: 70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.team {
+    width: 50%;
+    height: 70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#copyright {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #1B1A17;
+  }
