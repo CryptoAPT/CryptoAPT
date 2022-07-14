@@ -39,9 +39,9 @@
 }
 .graph-image {
     float: right;
-    text-align: right;
-    height: 150px;
-    width: 150px;
+    margin: 5px 70px; border: 2px;
+    height: 160px;
+    width: 190px;
 }
 .guia {
     width: 50%;
@@ -72,10 +72,44 @@
     grid-template-columns: repeat(2, 1fr);
 }
 #copyright {
-    position:fixed;
+    position:initial;
     left: 0;
     bottom: 0;
-    height: 3%;
+    height: 100px;
     width: 100%;
-    background-color: #1B1A17;
+    background-color: #22211f;
   }
+
+  h1
+  {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .h12
+  {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    
+  }
+
+  .h22
+  {
+    font-family: 'Raleway', sans-serif;
+    font-weight: unset;
+    text-align: center;
+  }
+
+  h5
+  {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+  }
+
+.graph-image2
+{
+    width: 210px;
+    height: 210px;
+    margin: 1px 60px; border: 2px;
+}
