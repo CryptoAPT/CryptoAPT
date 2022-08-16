@@ -5,6 +5,7 @@ CryptoAPT es un sitio web que permite tener un seguimiento activo de las criptom
 
 <br>
 Herramientas/Lenguajes utilizados:
+<br>
 HTML5, CSS3 (Bootstrap4) y JavaScript (jQuery).
 
 
