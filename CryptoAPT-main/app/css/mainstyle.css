@@ -23,12 +23,13 @@
     width: 300px;
 }
 .top-container {
-    border-radius: 3%;
+    border-radius: 2%;
     margin: auto;
     border: 2px white solid;
-    width: 600px;
+    width: 520px;
     height: 200px;  
     margin-top: 6;
+
 }
 .mid-container {
     margin:auto;
@@ -80,24 +81,12 @@
     background-color: #22211f;
   }
 
-  h1
-  {
-    font-family: 'Raleway', sans-serif;
-  }
-
   .h12
   {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: 500;
     
-  }
-
-  .h22
-  {
-    font-family: 'Raleway', sans-serif;
-    font-weight: unset;
-    text-align: center;
   }
 
   h5
@@ -113,3 +102,42 @@
     height: 210px;
     margin: 1px 60px; border: 2px;
 }
+
+article {
+    background: linear-gradient(
+      to right, 
+      rgb(255, 30, 0), 
+      rgb(255, 217, 0)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  .h1 {
+
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  body {
+    background: linear-gradient(
+      to bottom, 
+      rgb(0, 0, 0), 
+      rgb(29, 29, 29)
+    );
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-size: min(200%, 5vmin);
+  }
+  
+ 
+  
+  .h22 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
