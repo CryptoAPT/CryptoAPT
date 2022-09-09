@@ -1,0 +1,67 @@
+#titulo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #F2F2F2;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  line-height: 3.5;
+}
+.row {
+  color: white;
+}
+.container {
+    margin: auto;
+    margin-top: 10%;
+}
+.valoracion1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.topmid-container {
+  text-align: center;
+}
+.valoraciones {
+  width: 300px;
+  height: 200px;
+}
+#top {
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10%;
+  border-style: solid;
+  width: 600px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-right-width: 3px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+#copyright {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  height: 27px;
+  width: 100%;
+  background-color: #1B1A17;
+}
+#boton1 {
+  background-color: red;
+  border-style: hidden;
+  margin: auto;
+  margin-top: 10%;
+}
+.headmid-container {
+  margin: auto;
+  display: flex;
+}
+.hr{
+color: red;
+border: 2px solid;
+width: 65%;
+}

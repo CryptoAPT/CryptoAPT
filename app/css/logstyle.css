@@ -1,0 +1,42 @@
+.login-container {
+
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  margin: auto;
+  
+  border-style: solid;
+  width: 600px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-right-width: 3px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+#boton1 {
+
+  font-family: 'Raleway ', sans-serif;
+  background-color: red;
+  border-style: hidden;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.logoimg {
+  
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 60px;
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+font {
+  font-family: 'Raleway ', sans-serif;
+}
+
+#emailHelp
+{
+  font-family: 'Raleway ', sans-serif;
+}
