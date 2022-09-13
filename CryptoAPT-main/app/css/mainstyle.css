@@ -23,9 +23,9 @@
     width: 300px;
 }
 .top-container {
-    border-radius: 2%;
+    border-radius: 10px;
     margin: auto;
-    border: 2px white solid;
+    border: 2px rgb(255, 115, 0) solid;
     width: 520px;
     height: 200px;  
     margin-top: 6;
@@ -134,10 +134,29 @@ article {
     font-size: min(200%, 5vmin);
   }
   
- 
-  
-  .h22 {
-    font-family: 'Raleway', sans-serif;
+#hi2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; 
+}
+
+  #h22 {
+    position: relative;
+    font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    text-align: center;
+    background: linear-gradient(90deg, #000, rgb(255, 120, 0), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+
+    100% {
+      background-position: 500%;
+    }
   }
