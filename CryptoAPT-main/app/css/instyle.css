@@ -1,9 +1,10 @@
-#titulo {
+/*#titulo {
   font-family: 'Raleway', sans-serif;
   font-size: 5rem;
   text-align: center;
   color: #F2F2F2;
 }
+*/
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -65,3 +66,30 @@ color: red;
 border: 2px solid;
 width: 65%;
 }
+
+.div2{
+
+  display: flex;
+  text-align: center;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: typing 4s steps(30, end), blink-caret .6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 100, 0) }
+}
+
+
