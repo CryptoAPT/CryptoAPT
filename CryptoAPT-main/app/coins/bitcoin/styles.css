@@ -1,18 +1,36 @@
 .main-information {
-    
     width: 100%;
     height: 400px;
     padding-left: 5%;
     padding-top: 8%;
-    
 }
 .bitcoin {
-    
     margin-top: 7%;
 }
-.info {
-    border: 2px solid black;
-    
+
+#value{
+    color: whitesmoke;
 }
 
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
 
+#copyright {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height: 27px;
+    width: 100%;
+    background-color: #1B1A17;
+}
+
+.btclogo{
+    width: 128px;
+    height: 128px;
+}
+
+.btcamount{
+    border-width: 150px;
+}
