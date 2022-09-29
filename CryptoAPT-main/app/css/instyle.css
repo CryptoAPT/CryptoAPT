@@ -6,7 +6,7 @@
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   text-align: center;
   color: white;
@@ -47,10 +47,11 @@ h2 {
   position: initial;
   left: 0;
   bottom: 0;
-  height: 27px;
+  height: 100px;
   width: 100%;
   background-color: #1B1A17;
 }
+
 #boton1 {
   background-color: red;
   border-style: hidden;
