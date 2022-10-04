@@ -24,27 +24,29 @@
         <img src="images/favicon.png" alt="logo" class="logoimg">
 
         <div class="login-container">
-            <form style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px;">
+            <form style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px;" action="login.php" method="POST">
             <div class="form-group" style="margin-top: 7%">
                 <label for="exampleInputEmail1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Nombre de Usuario</span></strong></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="width:85%;">
+              <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="width:85%;">
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Email</span></strong></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" style="width:85%;">
+              <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" style="width:85%;">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Contraseña</span></strong></label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
+              <input type="text" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
               <small id="emailHelp" class="form-text text-muted" style=" font-family: 'Raleway:ital', sans-serif;">Minimun of 8 characters, including letters and numbers.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Confirmar Contraseña</span></strong></label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
+                <input type="text" name="cpass"class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
                 <small id="emailHelp" class="form-text text-muted" style=" font-family: 'Raleway:ital', sans-serif;">Repeat password.</small>
               </div>
             <div class="boton" style="text-align:center;">
-              <a class="btn btn-primary" href="main.html" id="boton1" role="button" style=" font-family: 'Raleway', sans-serif;"><strong>Ingresar</strong></a>
+              <button type="submit">Ingresar</button>
+              <!-- <a class="btn btn-primary" href="main.html" id="boton1" role="button" style=" font-family: 'Raleway', sans-serif;"><strong>Ingresar</strong></a>!-->
+             
             </div>
             <div>
 
