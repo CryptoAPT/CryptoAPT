@@ -7,6 +7,7 @@
 }
 .bitcoin {
     margin-top: 7%;
+    
 }
 
 #value{
@@ -22,7 +23,7 @@ h2{
     position:fixed;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 35px;
     width: 100%;
     background-color: #1B1A17;
 }
@@ -35,6 +36,12 @@ h2{
     height: 72px;
 }
 
+.hr{
+    color: red;
+    border: 2px solid;
+    width: 65%;
+    }
+
 h4{
     
     font-family: 'Raleway', sans-serif;
@@ -44,8 +51,9 @@ h4{
 }
 
 .btc-graph{
-    position: fixed;
-    margin-left: 350px;
+    
+    margin-left: 240px;
+    margin-right: 240px;
     width: 310px;
     height: 130px;
 }
