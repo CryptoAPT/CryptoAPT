@@ -1,7 +1,30 @@
-.d1{
-background-color: black;
-color: white;
 
-height: 40%;
-width: 10%;
+
+#table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 120px;
+}
+
+.bitcoin{
+    border: 2px solid white;
+}
+
+#top {
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    border-style: solid;
+    width: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right-width: 3px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
