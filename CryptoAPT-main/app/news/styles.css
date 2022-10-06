@@ -1,0 +1,111 @@
+.bitcoin{
+
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.binancecoin{
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.cardano{
+
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.ethereum{
+
+    width: 200px;
+    height: 200px;
+    background-color: white;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.polkadot{
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+.ripple{
+
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+.solana{
+
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.tether{
+
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.usdcoin{
+
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+tr{
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
