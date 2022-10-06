@@ -22,7 +22,8 @@
   </head>
   <body style="background-color: #000000;">
     <?php 
-    $conexion = mysqli_connect("localhost","root","","cryptoapt");
+    $conexion = mysqli_connect("localhost","root","","cripto");
+    
    if($_POST['cpass']==$_POST['pass'])
    {
     $cn="INSERT INTO user (user,email,pass) values ('".$_POST['user']."','" .$_POST['email']."','" .$_POST['pass']."')";

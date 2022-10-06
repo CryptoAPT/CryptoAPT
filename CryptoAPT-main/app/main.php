@@ -30,19 +30,115 @@
     <!--Navbar-->
 
     <?php 
-    $conexion = mysqli_connect("localhost","root","","cryptoapt");
+    $conexion = mysqli_connect("localhost","root","","cripto");
 
+    
+    
+   if (isset($_POST['email']))
+    {
+      $cn="SELECT * FROM 'user' where  email= '" . $_POST['email'] . "' and pass='" . $_POST['pass'] . "'";
+      $consultas = mysqli_query($conexion, $cn);
+     
+    
+      
+      if(isset($_POST['pass']))
+      {
+        ?>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="images/favicon.png" width="50" height="50" alt=""><strong> <span style="color: grey; font-family: Raleway, sans-serif;">CryptoAPT</span></strong></a>
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="signup.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign up</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign in</strong></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <!--/Navbar--> 
+        <br><br>
+        <article>
 
+          <div class="top-container">
+              <h1 style="font-family: 'DM Serif Display', serif; font-weight: 400;"><em><span id="h22">Bienvenido</span><br></em><span id="username-topbox"><?php echo($_POST['email']); ?></span></h1> <!--USUARIO1 modificado mediante el user logueado-->
+              <br>
+              <h2 id="hi2">¿Qué desea hacer hoy?</h2>
+          </div>
 
-    $cn="SELECT * FROM 'user' where  email= '" . $_POST['email'] . "' and pass='" . $_POST['pass'] . "'";
+        </article>
+              <br><br><br>
+            <div class="mid-container">
+              <div class="guia">
+                <img src="./images/bitcoin.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
+                <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
+                  <h1 class="h12">Guía de inicio</h1>
+                  <br>
+                  <h5>¿Es nuevo en crypto? Lea nuestra guía de inicio a la criptomoneda sin vocabulario técnico!</h5>
+                </div>
+              </div>
+
+        <br><br><br>
+              <div class="analyzer">
+                <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
+                  <h1 style="text-align:center; font-family: 'Raleway', sans-serif;">Analizador</h1>
+                  <br>
+                  <h5>No se complique y prepare su siguiente jugada.</h5>
+                </div>
+                <img src="./images/bar-graph.png" class="graph-image" style="margin-top: 5%;" alt="bitcoin">
+                
+              </div>
+        <br><br><br>
+        <div class="tracker">
+          <img src="./images/billete-de-banco.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
+          <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
+            <h1 style="text-align:center;">Seguidor</h1>
+            <br>
+            <h5 style="text-align:center;">¿Qué precio cotiza hoy?</h5>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="team">
+          <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
+            <h1 style="text-align: center;">Sobre el equipo</h1>
+            <br>
+            <h5>¡Descubra quienes están detrás de esta herramienta!</h5>
+          </div>
+          <img src="./images/formacion-de-equipos.png" class="graph-image2" alt="equipo">
+          
+        </div>
+        <br><br><br>
+        <footer id="copyright">
+          <p id="footerp" style="color:#7F8487;">@CryptoAPT 2022 || All rights reserved.</p>
+        </footer>
+        <script src="index.js"></script>
+        <script src="analyzer.js"></script>
+    <?php
+      
+      }
+      else
+      {
+        echo("CONTRASEÑA INCORRECTA");
+      }
+    }
+    else
+    {
+      echo("USUARIO INCORRECTO");
+    }
+   
+    
    
    // $cn3="INSERT INTO 'user' (pass) values ('".$_POST['pass']."')"; //>
    
-    $consultas = mysqli_query($conexion, $cn);
+    
 
     
    
-
+    ?>
     
     
     
@@ -52,80 +148,6 @@
     
 
     
-?>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html"><img src="images/favicon.png" width="50" height="50" alt=""><strong> <span style="color: grey; font-family: Raleway, sans-serif;">CryptoAPT</span></strong></a>
-        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="signup.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign up</strong></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign in</strong></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-     <!--/Navbar--> 
-<br><br>
-<article>
-  <div class="top-container">
-    
-      <h1 style="margin-top:6%; font-family: 'DM Serif Display', serif;font-weight: 400;"><em>Bienvenido </em><span id="h22" style="color: lightblue;">USUARIO1</span></h1> <!--USUARIO1 modificado mediante el user logueado-->
-      <br>
-      <h2 id="hi2">¿Qué desea hacer hoy?</h2>
-    
-  </div>
-</article>
-      <br><br><br>
-    <div class="mid-container">
-      <div class="guia">
-        <img src="./images/bitcoin.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
-        <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
-          <h1 class="h12">Guía de inicio</h1>
-          <br>
-          <h5>¿Es nuevo en crypto? Lea nuestra guía de inicio a la criptomoneda sin vocabulario técnico!</h5>
-        </div>
-      </div>
-
-<br><br><br>
-      <div class="analyzer">
-        <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
-          <h1 style="text-align:center; font-family: 'Raleway', sans-serif;">Analizador</h1>
-          <br>
-          <h5>No se complique y prepare su siguiente jugada.</h5>
-        </div>
-        <img src="./images/bar-graph.png" class="graph-image" style="margin-top: 5%;" alt="bitcoin">
-        
-      </div>
-<br><br><br>
-<div class="tracker">
-  <img src="./images/billete-de-banco.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
-  <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
-    <h1 style="text-align:center;">Seguidor</h1>
-    <br>
-    <h5 style="text-align:center;">¿Qué precio cotiza hoy?</h5>
-  </div>
-</div>
- <br><br><br>
- <div class="team">
-  <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
-    <h1 style="text-align: center;">Sobre el equipo</h1>
-    <br>
-    <h5>¡Descubra quienes están detrás de esta herramienta!</h5>
-  </div>
-  <img src="./images/formacion-de-equipos.png" class="graph-image2" alt="equipo">
-  
-</div>
-<br><br><br>
-<footer id="copyright">
-  <p style="text-align: center; color:#7F8487;">@CryptoAPT 2022 || All rights reserved.</p>
-</footer>
-<script src="index.js"></script>
-<script src="analyzer.js"></script>
 
 </body>
 </html>
