@@ -56,9 +56,17 @@
                       <img class="btc-graph" src="bitcoin/res/grafik.png" alt="btc_graph">
                     </td>
                     <td>
+                      <div class="input-group mb-3 decision">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        
+                      <button type="button" class="btn btn-success" style="margin-left: 5%;" onclick="show();">Escanear</button>
+
+                      </div>
+<!--
                       <h2 style="font-weight: 100; color: orange"><strong>Analyzer</strong></h2>
-                      <h3 id="value">Decision</h3> 
-                    </td>
+                      <h4>A continuación, indique el margen de hold.</h4>
+-->                </td>
                   </tr>
                       </table>
                     </div>
@@ -76,7 +84,24 @@
 <footer id="copyright">
     <p style="text-align: center; color:#7F8487;">@CryptoAPT 2022 || All rights reserved.</p>
   </footer> 
+  <div class="hold" style="display: none;" >
+    <h3 style="text-align: center;color:aliceblue">Decisión final...</h3>
+    <br><h5 style="color: orange;text-align: center;">HOLD</h4><br>
+    <p style="color: aliceblue; text-align: center;">Nuestro software creyó conveniente que <span style="color: orange">mantengas</span> la moneda y <span style="color: orange">no hagas ninguna transacción.</span></p>
+  </div>
 
-<script src="bitcoin/script.js"></script>
+  <div class="buy" style="display: none;">
+    <h3 style="text-align: center;color:aliceblue">Decisión final...</h3>
+    <br><h5 style="color: lightgreen;text-align: center;">BUY</h4><br>
+    <p style="color: aliceblue; text-align: center;">Nuestro software creyó conveniente que <span style="color: lightgreen">compres</span> la moneda.</p>
+  </div>
+
+  <div class="sell" style="display: none;">
+    <h3 style="text-align: center;color:aliceblue">Decisión final...</h3>
+    <br><h5 style="color:tomato ;text-align: center;">SELL</h4><br>
+    <p style="color: aliceblue; text-align: center;">Nuestro software creyó conveniente que <span style="color: tomato">vendas</span> la moneda lo antes posible. <span style="color: tomato">Harás un excelente negocio.</span></p> 
+  </div>
+  <script src="bitcoin/script.js"></script>
+  <script src="bitcoin/analyzer.js"></script>
 </body>
 </html>
