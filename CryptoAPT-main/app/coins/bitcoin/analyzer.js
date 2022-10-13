@@ -113,13 +113,6 @@ El analizador puede no ser 100% preciso.
 var semana1=19427, semana2=20157, semana3=19117;
 var valorElegido = 400 // Acá iría el valor que el usuario coloque.
 
-var valorGrafico1 = (semana1 * 2) / 100;
-var GraficoFinal1 = Math.round((valorGrafico1 * 10) / 100);
-var valorGrafico2 = (semana2 * 2) / 100;
-var GraficoFinal2 = Math.round((valorGrafico2 * 10) / 100);
-var valorGrafico3 = (semana3 * 2) / 100;
-var GraficoFinal3 = Math.round((valorGrafico3 * 10) / 100);
- 
 //Promedio entre las primeras dos semanas
 var promedio = (semana1 + semana2) / 2;
 
