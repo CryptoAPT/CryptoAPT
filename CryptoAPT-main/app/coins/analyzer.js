@@ -110,16 +110,9 @@ INFORMACIÓN IMPORTANTE : Hasta que no se obtengan valores vía web, se utilizar
 El analizador puede no ser 100% preciso.
 */
 
-var semana1=19427, semana2=20157, semana3=19117;
-var valorElegido = 400 // Acá iría el valor que el usuario coloque.
+var semana1=21200, semana2=23000, semana3=19000;
+var valorElegido = 1800 // Acá iría el valor que el usuario coloque.
 
-var valorGrafico1 = (semana1 * 2) / 100;
-var GraficoFinal1 = Math.round((valorGrafico1 * 10) / 100);
-var valorGrafico2 = (semana2 * 2) / 100;
-var GraficoFinal2 = Math.round((valorGrafico2 * 10) / 100);
-var valorGrafico3 = (semana3 * 2) / 100;
-var GraficoFinal3 = Math.round((valorGrafico3 * 10) / 100);
- 
 //Promedio entre las primeras dos semanas
 var promedio = (semana1 + semana2) / 2;
 
@@ -138,25 +131,16 @@ var porcentajeHold = (promedioHold * 10) / 100;
 //Sentencia del analizador:
 //Comienza por el caso n°3 para ver si el holdeo es viable
 if(valorElegido > porcentajeHold) {
-    
+    console.log("El analizador recomienda holdear.");
 }
     else if(porcentajePromedio > porcentaje) {
-        swapContent('sell');
+        console.log("El analizador recomienda vender la moneda.");
     }
         else if(porcentajePromedio < porcentaje) {
-            //document.getElementById("decision").innerHTML = "El analizador recomienda comprar la moneda";
             console.log("El analizador recomienda comprar la moneda");
         }
-    
-        
-        function swapContent (id) {
-            const main = document.getElementById('decision');
-            const div = document.getElementById(id);
-            const clone = div.cloneNode(true);
-        
-            while (main.firstChild) main.firstChild.remove();
-        
-            main.appendChild(clone);
-        }
-
-        
+/*const $div = d.quer,
+ $divags =d.que
+$div.ine = "";
+$div.appendchil ($divags)
+*/
