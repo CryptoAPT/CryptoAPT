@@ -1,0 +1,70 @@
+.facundo{
+
+    width: 380px;
+    height: 300px;
+    
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+.leo{
+
+
+    width: 380px;
+    height: 300px;
+
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.quintas{
+
+    width: 380px;
+    height: 300px;
+   
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+.thiago{
+
+
+    width: 380px;
+    height: 300px;
+   
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+
+.Duca{
+
+
+    width: 380px;
+    height: 300px;
+ 
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+}
+
+tr{
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-left: 100px;
+    padding-right: 270px;
+    padding-bottom: 25px;
+    padding-top: 85px;
+}
