@@ -67,7 +67,149 @@ var source18;
 var source19;
 var source20;
 
+/* URL'S*/
+var url1;
+var url2;
+var url3;
+var url4;
+var url5;
+var url6;
+var url7;
+var url8;
+var url9;
+var url10;
+var url11;
+var url12;
+var url13;
+var url14;
+var url15;
+var url16;
+var url17;
+var url18;
+var url19;
+var url20;
 
+
+/*-URL-*/
+    //1
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url1 = data.Data[0].url)
+    .then(data => document.getElementById("url1").innerHTML = url1)
+
+    //2
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url2 = data.Data[1].url)
+    .then(data => document.getElementById("url2").innerHTML = url2)
+
+    //3
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url3 = data.Data[2].url)
+    .then(data => document.getElementById("url3").innerHTML = url3)
+
+    //4
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url4 = data.Data[3].url)
+    .then(data => document.getElementById("url4").innerHTML = url4)
+
+    //5
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url5 = data.Data[4].url)
+    .then(data => document.getElementById("url5").innerHTML = url5)
+    
+    //6
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url6 = data.Data[5].url)
+    .then(data => document.getElementById("url6").innerHTML = url6)
+
+    //7
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url7 = data.Data[6].url)
+    .then(data => document.getElementById("url7").innerHTML = url7)
+
+    //8
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url8 = data.Data[7].url)
+    .then(data => document.getElementById("url8").innerHTML = url8)
+
+    //9
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url9 = data.Data[8].url)
+    .then(data => document.getElementById("url9").innerHTML = url9)
+
+    //10
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url10 = data.Data[9].url)
+    .then(data => document.getElementById("url10").innerHTML = url10)
+
+    //11
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url11 = data.Data[10].url)
+    .then(data => document.getElementById("url11").innerHTML = url11)
+    
+    //12
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url12 = data.Data[11].url)
+    .then(data => document.getElementById("url12").innerHTML = url12)
+
+    //13
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url13 = data.Data[12].url)
+    .then(data => document.getElementById("url13").innerHTML = url13)
+
+    //14
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url14 = data.Data[13].url)
+    .then(data => document.getElementById("url14").innerHTML = url14)
+
+    //15
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url15 = data.Data[14].url)
+    .then(data => document.getElementById("url15").innerHTML = url15)
+
+    //16
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url16 = data.Data[15].url)
+    .then(data => document.getElementById("url16").innerHTML = url16)
+
+    //17
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url17 = data.Data[16].url)
+    .then(data => document.getElementById("url17").innerHTML = url17)
+    
+    //18
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url18 = data.Data[17].url)
+    .then(data => document.getElementById("url18").innerHTML = url18)
+
+    //19
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url19 = data.Data[18].url)
+    .then(data => document.getElementById("url19").innerHTML = url19)
+    
+    //20
+    fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=ES&api_key={a4874012c0cdff9b7e08a451d450046f9174f2896b72dfb388cfca2ff292254b}")
+    .then(response => response.json())
+    .then(data => url20 = data.Data[19].url)
+    .then(data => document.getElementById("url20").innerHTML = url20)
 
 /*-Tags-*/
 
