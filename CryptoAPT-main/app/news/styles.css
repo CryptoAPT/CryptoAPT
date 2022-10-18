@@ -5,3 +5,24 @@
     border-radius: 25px;
     border: 2px solid red;
 }
+
+.block-container {
+    display: flex;
+    text-align: center;
+}
+.margin {
+    margin-right:50px;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.card {
+    width: 450px;
+    height: 450px;
+}
+
+.ache1{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
