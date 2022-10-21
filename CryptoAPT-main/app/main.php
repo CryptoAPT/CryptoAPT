@@ -26,24 +26,27 @@
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     </head>
-<body style="background-color:#0D0D0D;">
-    <!--Navbar-->
+
+
+ 
 
     <?php 
     $conexion = mysqli_connect("localhost","root","","cripto");
 
     
     
-   if (isset($_POST['email']))
+   if (isset($_POST['email']) && isset($_POST['pass']))
     {
-      $cn="SELECT * FROM 'user' where  email= '" . $_POST['email'] . "' and pass='" . $_POST['pass'] . "'";
-      $consultas = mysqli_query($conexion, $cn);
-     
-    
+      $cn="SELECT * FROM user where  email= '" . $_POST['email'] . "'" ;
+      $ce = mysqli_query($conexion, $cn);
+      $a = mysqli_fetch_array($ce);
       
-      if(isset($_POST['pass']))
+     if($a['email'] == $_POST['email'] && $a ['pass'] == $_POST['pass'])
       {
         ?>
+       
+       <body style="background-color:#0D0D0D;">
+           <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="index.html"><img src="images/favicon.png" width="50" height="50" alt=""><strong> <span style="color: grey; font-family: Raleway, sans-serif;">CryptoAPT</span></strong></a>
                 <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,16 +123,23 @@
     <?php
       
       }
+      else if ($a['email']!=$_POST['email'])
+      {
+ 
+
+        echo("EMAIL INCORRECTO");
+      }
       else
       {
+ 
+
         echo("CONTRASEÑA INCORRECTA");
       }
-    }
-    else
-    {
-      echo("USUARIO INCORRECTO");
-    }
-   
+      
+    
+    } 
+    
+    
     
    
    // $cn3="INSERT INTO 'user' (pass) values ('".$_POST['pass']."')"; //>

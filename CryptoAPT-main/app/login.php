@@ -26,38 +26,49 @@
     
    if($_POST['cpass']==$_POST['pass'])
    {
-    $cn="INSERT INTO user (user,email,pass) values ('".$_POST['user']."','" .$_POST['email']."','" .$_POST['pass']."')";
-   
-   // $cn3="INSERT INTO 'user' (pass) values ('".$_POST['pass']."')"; //>
-   
-    $consultas = mysqli_query($conexion, $cn);
-    ?>
-    <img src="images/favicon.png" alt="logo" class="logoimg">
+     $cnmail= "SELECT * from user where email= '" . $_POST['email'] ."'" ;
+     $consul = mysqli_query($conexion, $cnmail);
+     $datos = mysqli_fetch_array($consul);
+  
+     if($datos['email']== $_POST['email'] && $datos['pass']==$_POST['pass'] && $datos['user']==$_POST['user'])
+    {
+      
+      echo("USUARIO YA REGISTRADO");
+      
+    }
+      else
+      {
+      $cn="INSERT INTO user (user,email,pass) values ('".$_POST['user']."','" .$_POST['email']."','" .$_POST['pass']."')";    
+      $consultas = mysqli_query($conexion, $cn);
+      ?>
+      <img src="images/favicon.png" alt="logo" class="logoimg">
 
-    <div class="login-container">
-      <form style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px;" action="main.php" method="POST">
-      <div class="form-group">
-        <label for="exampleInputEmail1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Email</span></strong></label>
-        <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width:85%;">
-        <small id="emailHelp" class="form-text text-muted" style=" font-family: 'Raleway', sans-serif;"><strong>Nunca revelaremos sus datos personales con nadie.</strong></small>
+      <div class="login-container">
+        <form style="margin-top: 20px;margin-left: 20px;margin-bottom: 20px;" action="main.php" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Email</span></strong></label>
+          <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width:85%;">
+          <small id="emailHelp" class="form-text text-muted" style=" font-family: 'Raleway', sans-serif;"><strong>Nunca revelaremos sus datos personales con nadie.</strong></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Contraseña</span></strong></label>
+          <input type="text" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"><strong><span class="font">No cerrar sesión</span></strong></label>
+        </div>
+        <div class="boton" style="text-align:center;">
+        <button type="submit">ingresar</button>
+        <!-- <a class="btn btn-primary" href="main.html" id="boton1" role="button" style=" font-family: 'Raleway', sans-serif;"><strong>Ingresar</strong></a>
+        !-->
+        </div>
+      
+      </form>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1" style="color:red; font-family: 'Raleway', sans-serif;"><strong><span class="font">Contraseña</span></strong></label>
-        <input type="text" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%;">
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1"><strong><span class="font">No cerrar sesión</span></strong></label>
-      </div>
-      <div class="boton" style="text-align:center;">
-      <button type="submit">ingresar</button>
-       <!-- <a class="btn btn-primary" href="main.html" id="boton1" role="button" style=" font-family: 'Raleway', sans-serif;"><strong>Ingresar</strong></a>
-      !-->
-      </div>
-    
-    </form>
-    </div>
-    <?php
+      <?php
+        
+      }
    }
    else
    {
