@@ -116,7 +116,7 @@
         </div>
         <br><br><br>
         <footer id="copyright">
-          <p id="footerp" style="color:#7F8487;">@CryptoAPT 2022 || All rights reserved.</p>
+          <p id="footerp" style="color:#7F8487; text-align: center;">@CryptoAPT 2022 || All rights reserved.</p>
         </footer>
         <script src="index.js"></script>
         <script src="analyzer.js"></script>

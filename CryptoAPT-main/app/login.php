@@ -22,6 +22,7 @@
   </head>
   <body style="background-color: #000000;">
     <?php 
+    error_reporting(0);
     $conexion = mysqli_connect("localhost","root","","cripto");
     
    if($_POST['cpass']==$_POST['pass'])
@@ -30,11 +31,11 @@
      $consul = mysqli_query($conexion, $cnmail);
      $datos = mysqli_fetch_array($consul);
   
-     if($datos['email']== $_POST['email'] && $datos['pass']==$_POST['pass'] && $datos['user']==$_POST['user'])
+     if($datos['email']== $_POST['email'] || $datos['user']==$_POST['user'])
     {
-      
-      echo("USUARIO YA REGISTRADO");
-      
+      ?>
+      <h1 class="hola" style="font-family: 'Raleway', sans-serif; text-align:center; color: whitesmoke;">USUARIO YA REGISTRADO</h1>
+      <?php
     }
       else
       {
