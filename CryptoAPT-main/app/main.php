@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <title>CryptoAPT | Inicio</title>
+         <!--Favicon-->
+    <link rel="shortcut icon" href="favicon2.ico">
+         <!--CSS-->
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </head>
+<body style="background-color:#0D0D0D;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/favicon.png" width="50" height="50" alt=""><strong> <span style="color: grey; font-family: Raleway, sans-serif;">CryptoAPT</span></strong></a>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="signup.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign up</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color:grey; font-family: Raleway, sans-serif;"><strong>Sign in</strong></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     <!--/Navbar-->
+<br><br>
+<article>
+  <div class="top-container">
+
+                <h1 style="font-family: 'DM Serif Display', serif; font-weight: 400;"><em><span id="h22">Bienvenido</span><br></em><span id="username-topbox"><?php session_start(); echo($_SESSION['user']); ?></span></h1> <!--USUARIO1 modificado mediante el user logueado-->
+      <br>
+      <h2 id="hi2">¿Qué desea hacer hoy?</h2>
+
+  </div>
+</article>
+      <br><br><br>
+    <div class="mid-container">
+      <a href="guide/guide.html">
+      <div class="guia">
+        <img src="./images/bitcoin.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
+        <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
+          <h1 class="h12">Guía de inicio</h1>
+          <br>
+          <h5>¿Es nuevo en crypto? Lea nuestra guía de inicio a la criptomoneda sin vocabulario técnico!</h5>
+        </div>
+      </div>
+    </a>
+
+<br><br><br>
+<a href="coins/menucrypto/menucryptos.html">
+      <div class="analyzer">
+        <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
+          <h1 style="text-align:center; font-family: 'Raleway', sans-serif;">Analizador</h1>
+          <br>
+          <h5>No se complique y prepare su siguiente jugada.</h5>
+        </div>
+        <img src="./images/bar-graph.png" class="graph-image" style="margin-top: 5%;" alt="bitcoin">
+
+      </div>
+
+<br><br><br>
+<div class="tracker">
+  <img src="./images/billete-de-banco.png" class="bitcoin-image" style="margin-top: 5%; margin-left: 5%;" alt="bitcoin">
+  <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;">
+    <h1 style="text-align:center;">Seguidor</h1>
+    <br>
+    <h5 style="text-align:center;">¿Qué precio cotiza hoy?</h5>
+  </div>
+</div>
+</a>
+ <br><br><br>
+ <a href="team/team.html">
+ <div class="team">
+  <div class="explicacion" style="color: #FFF8DC; margin-top: 5%;margin-bottom: 5%;margin-left: 5%;">
+    <h1 style="text-align: center;">Sobre el equipo</h1>
+    <br>
+    <h5>¡Descubra quienes están detrás de esta herramienta!</h5>
+  </div>
+  <img src="./images/formacion-de-equipos.png" class="graph-image2" alt="equipo">
+</a>
+</div>
+<br><br><br>
+<footer id="copyright">
+  <p style="text-align: center; color:#7F8487;">@CryptoAPT 2022 || All rights reserved.</p>
+</footer>
+<script src="index.js"></script>
+<script src="analyzer.js"></script>
+
+</body>
+</html>
