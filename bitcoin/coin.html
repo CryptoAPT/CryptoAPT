@@ -11,8 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="graph.js"></script>
-
-<!-- JavaScript Bundle with Popper -->
+<!--jQuery-->
 
 </head>
 <body>
@@ -21,7 +20,7 @@
         <img src="images/bitcoin.png" alt="btc-image" width="200" height="200" class="center">
         <h1 style="text-align:center;font-weight: 900;font-size: 4rem;;">Bitcoin</h1>
         <div class="crypto-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ut est deserunt numquam accusantium reprehenderit consequatur voluptatibus veritatis? Porro aut nulla exercitationem, est cumque iure dolor a quasi illum ratione?</p></div>
-        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        <div id="curve_chart" style="width: 900px; height: 500px" class="center"></div>
     </div>
     
     <div class="second-container">
@@ -33,13 +32,36 @@
         </div>
         <hr>
         <div class="parent" style="padding-top: 150px;padding-bottom:150px;">
-            <div class="crypto-live"><h3 style="font-size:1.6rem;">Analyzer</h3><button class="button-1" role="button">Button 1</button></div>
+            <div class="crypto-live"><input type="button" name="answer" value="Show Div" onclick="showDiv()" /> </div>
             <div class="crypto-text1"><h1 style="text-align: center;">Información</h1><h3 style="text-align: center;">¡Descubra su siguiente movimiento!</h3><p style="text-align:justify">Al tocar el botón, nuestro analizador le recomendará qué hacer en caso que quiera realizar una transacción (Esta "predicción" se utiliza con valores de 30 minutos)</p></div>
         </div>
+        <div id="sell-div" style="text-align:center;border: 5px solid green; width:fit-content;display:none;padding:30px;border-radius:15px;background-color:aliceblue;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: lightgreen;font-weight:700">COMPRAR</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará comprando la moneda.</h3>
+            <h4 style="color:lightgreen">¡Probabilidad a valorizar en un futuro!</h4>
+        </div>
+        <div style="text-align:center;border: 5px solid red; width:fit-content;padding:30px;border-radius:15px;background-color: aliceblue;display:none;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: red;font-weight:700">VENDER</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará vendiendo la moneda.</h3>
+            <h4 style="color:red">¡Negocio inmediato! ¡Gane dinero!</h4>
+        </div>
+
+        
+        <div id="hold-div" style="text-align:center;border: 5px solid orange; width:fit-content;padding:30px;border-radius:15px;background-color: aliceblue;display: none;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: orange;font-weight:700">MANTENER</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará manteniendo la moneda.</h3>
+            <h4 style="color:orange">No encontrará un negocio realizando transacciones en este momento.</h4>
+        </div>
+
+
         <hr>
         
 
     </div>
     <script src="price.js"></script>
+    <script src="analyzer.js"></script>
 </body>
 </html>
