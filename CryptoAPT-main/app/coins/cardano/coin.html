@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardano || CryptoAPT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="graph.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="first-container">
+       <a href="./../../main.html"> <h2 style="font-weight: 800" style="position:relative;text-decoration: none;">  Volver a inicio</h2></a>
+        <img src="./../menucrypto/images/cardano-ada-logo.png" alt="btc-image" width="200" height="200" class="center">
+        <h1 style="text-align:center;font-weight: 900;font-size: 4rem;;">Cardano</h1>
+        <div class="crypto-text"><p>Cardano es una plataforma de blockchain, cuya criptomoneda 
+            se denomina "ADA" y sirve para que los propietarios de dicha
+             moneda digital puedan participar del funcionamiento correcto
+             de la cadena de bloques.
+            <br>
+            El proyecto Cardano fue creado por el matemático y 
+            desarrollador de software Charles Hoskinson, que se hizo
+             conocido inicialmente por ser el cofundador de Ethereum,
+             otra plataforma blockchain.</p></div>
+        <div id="curve_chart" style="width: 900px; height: 500px" class="center"></div>
+    </div>
+    
+    <div class="second-container">
+        <img src="images/herramienta.png" style="padding-top:50px;" alt="tool-img" width="150" height="150" class="center">
+        <h2 style="text-align:center;font-weight:700;font-size:2rem;margin-bottom:200px;">Herramientas de CryptoAPT</h2>
+        <div class="parent" style="padding-bottom:150px;">
+            <div class="crypto-live"><h3 style="font-size:1.6rem;">Valor del bitcoin</h3><h4 style="text-align:center;font-size:1.2rem;">¿Cuánto cotiza?</h4><h4 style="color:darkgreen;font-size: 1.3rem;text-align:center;">$<span id="amount" style="font-size:1.3rem;text-align:center;color:darkgreen">amount</span></h4></div> 
+            <div class="crypto-text1"><h1 style="text-align:center">Información</h1><h3 style="text-align:center;">¡Revise la cotización actual de la moneda!</h3></div>
+        </div>
+        <hr noshade>
+        <div class="parent" style="padding-top: 150px;padding-bottom:150px;">
+            <div class="crypto-live"><button id="toggle">Descúbralo</button></div> <!--  Botón -->
+            <div class="crypto-text1"><h1 style="text-align: center;">Información</h1><h3 style="text-align: center;">¡Descubra su siguiente movimiento!</h3><p style="text-align:justify">Al tocar el botón, nuestro analizador le recomendará qué hacer en caso que quiera realizar una transacción (Esta "predicción" se utiliza con valores de 30 minutos)</p></div>
+        </div>
+        <div id="buy-div" style="text-align:center;border: 5px solid green; width:fit-content;display:none;padding:30px;border-radius:15px;background-color:aliceblue;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: lightgreen;font-weight:700">COMPRAR</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará comprando la moneda.</h3>
+            <h4 style="color:lightgreen">¡Probabilidad a valorizar en un futuro!</h4>
+        </div>
+        <div id="sell-div" style="text-align:center;border: 5px solid red; width:fit-content;padding:30px;border-radius:15px;background-color: aliceblue;display:none;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: red;font-weight:700">VENDER</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará vendiendo la moneda.</h3>
+            <h4 style="color:red">¡Negocio inmediato! ¡Gane dinero!</h4>
+        </div>
+
+        
+        <div id="hold-div" style="text-align:center;border: 5px solid orange; width:fit-content;padding:30px;border-radius:15px;background-color: #2e8224;display: none;" class="center">
+            <h1 style="font-weight: 900;">Decisión final del analizador...</h1>
+            <h2 style="color: orange;font-weight:700">MANTENER</h2>
+            <h3>Nuestra herramienta decidió que el mejor negocio lo encontrará manteniendo la moneda.</h3>
+            <h4 style="color:orange">No encontrará un negocio realizando transacciones en este momento.</h4>
+        </div>
+
+
+        
+        
+
+    </div>
+    <script src="price.js"></script>
+    <script src="analyzer.js"></script>
+</body>
+</html>
+
+
