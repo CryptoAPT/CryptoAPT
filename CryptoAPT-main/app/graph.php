@@ -5,12 +5,19 @@
 </head>
 <body>
     <?php
-        $a=1900;
+  
+      $conexion = mysqli_connect("localhost","root","","cripto");
+      $cn="SELECT * FROM cardano";
+      $consulta=mysqli_query($conexion,$cn);
+      $datos=mysqli_fetch_array($consulta);
+     
+      
+     
     ?>
 
 <script>
-    var a = <?= json_encode($a) ?>;
-    
+  var a =<?php echo json_encode($datos); ?>;
+     
  console.log("El contenido de la variable es: " + a)
  google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
@@ -20,9 +27,9 @@ function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['Year', 'Sales'],
     ['2004',  a],
-    ['2005',  1170],
-    ['2006',  660],
-    ['2007',  1030]
+    ['2005',  2],
+    ['2006',  3],
+    ['2007',  4]
   ]);
 
   var options = {
